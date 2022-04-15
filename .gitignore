@@ -3,3 +3,4 @@ combined.log
 yarn-error.log
 dist
 .env
+.DS_Store
