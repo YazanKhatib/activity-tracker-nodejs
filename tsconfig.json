@@ -9,8 +9,8 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "graph/*": ["src/graph/*"],
-      "graph": ["src/graph/index.ts"],
+      "lib/*": ["src/lib/*"],
+      "lib": ["src/lib/index.ts"],
       "models/*": ["src/models/*"],
       "models": ["src/models/index.ts"],
       "controllers/*": ["src/controllers/*"],

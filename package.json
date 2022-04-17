@@ -13,8 +13,8 @@
     "rollback": "knex --knexfile=src/knexfile.ts migrate:rollback"
   },
   "_moduleAliases": {
-    "graph/*": "src/graph/*",
-    "graph": "src/graph/index.ts",
+    "lib/*": "src/lib/*",
+    "lib": "src/lib/index.ts",
     "models/*": "src/models/*",
     "models": "src/models/index.ts",
     "controllers/*": "src/controllers/*",
@@ -37,9 +37,11 @@
     "pg": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^9.1.1",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3"
   },
   "devDependencies": {
+    "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "eslint": "^7.23.0",
