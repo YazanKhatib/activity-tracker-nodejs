@@ -59,7 +59,6 @@ export const updateActivity = async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
     console.log(req.body);
-    const { name, type, duration, start, stop } = req.body;
 
     const result = activities.findIndex((activity) => activity.id === id);
 
@@ -72,7 +71,7 @@ export const updateActivity = async (req: Request, res: Response) => {
 
     activities[result] = { ...activities[result], ...req.body };
     res.send({
-      activity: activities[result],
+      activities,
     });
   } catch (e: any) {
     Logger.error(e.message);
